@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	config, err := clientcmd.BuildConfigFromFlags("", "/root/.kube/config")
+	config, err := clientcmd.BuildConfigFromFlags("", *"/root/.kube/config")
 	if err != nil {
 		panic(err)
 	}
